@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-image: url("http://i.imgur.com/ORtGVpV.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 175%;
+}
+
+.topper {
+	text-align: center;
+	padding-bottom: 4em;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 3em;
+}
+
+.questions {
+	float: left;
+	padding-left: 15em;
+}
+
+ul {
+	list-style-type: none;
+	float: right;
+	padding-right: 23em;
+}
+
+/*footer {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	font-size: 0.75em;
+}
+<footer>
+	<p>Cover image via <a href="http://unsplash.com" target=_Blank>Unsplash</a></p>
+</footer>*/
