@@ -2,11 +2,11 @@
 	box-sizing: border-box;
 }
 
-html {
+/*html {
 	background-image: url("http://i.imgur.com/ORtGVpV.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 175%;
-}
+}*/
 
 .topper {
 	text-align: center;
@@ -19,12 +19,23 @@ h1 {
 }
 
 .questions {
-	float: left;
+	/*float: left;*/
 	padding-left: 15em;
 }
 
 ul {
 	list-style-type: none;
-	float: right;
+}
+
+.answers ul {
+	/*float: right;*/
 	padding-right: 23em;
+}
+
+.progress ul li {
+	display: inline-block;
+}
+
+.progress ul {
+	text-align: center;
 }
