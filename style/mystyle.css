@@ -23,18 +23,15 @@ h1 {
 	padding-left: 15em;
 }
 
-ul {
-	list-style-type: none;
+.answers {
 	float: right;
 	padding-right: 23em;
 }
 
-/*footer {
-	display: flex;
-	justify-content: center;
-	align-items: baseline;
-	font-size: 0.75em;
+ul {
+	list-style-type: none;
 }
-<footer>
-	<p>Cover image via <a href="http://unsplash.com" target=_Blank>Unsplash</a></p>
-</footer>*/
+
+.progress ul li {
+	display: inline-block;
+}
