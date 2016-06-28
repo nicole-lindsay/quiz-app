@@ -7,17 +7,15 @@ html, body {
 	margin: 0;
 }
 
-/*html {
+html {
 	background-image: url("http://i.imgur.com/ORtGVpV.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-}*/
+}
 
 .topper {
 	text-align: center;
-	padding-bottom: 4em;
-	border-color: blue;
-	border-style: solid;
+	padding-bottom: 3.5em;
 }
 
 h1 {
@@ -28,36 +26,29 @@ h1 {
 #quiz {
 	min-height: 50%;
 	margin: 0 auto;
-	border-color: green;
-	border-style: solid;
+	display: flex;
 }
 
 .questions {
-	/*float: left;*/
 	padding-left: 15em;
-	border-color: purple;
-	border-style: solid;
 }
 
 ul {
 	list-style-type: none;
+	padding: 0
 }
 
-.answers ul {
-	/*float: right;*/
-	padding-right: 23em;
-	border-color: black;
-	border-style: solid;
+.answers {
+	padding-left: 12em;
 }
 
 .progress {
 	height: 55px;
-	border-color: orange;
-	border-style: solid;
 }
 
 .progress ul li {
 	display: inline-block;
+	font-size: 2em;
 }
 
 .progress ul {
