@@ -2,15 +2,22 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 /*html {
 	background-image: url("http://i.imgur.com/ORtGVpV.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 175%;
+	background-size: 100% 100%;
 }*/
 
 .topper {
 	text-align: center;
 	padding-bottom: 4em;
+	border-color: blue;
+	border-style: solid;
 }
 
 h1 {
@@ -18,9 +25,18 @@ h1 {
 	font-size: 3em;
 }
 
+#quiz {
+	min-height: 50%;
+	margin: 0 auto;
+	border-color: green;
+	border-style: solid;
+}
+
 .questions {
 	/*float: left;*/
 	padding-left: 15em;
+	border-color: purple;
+	border-style: solid;
 }
 
 ul {
@@ -30,6 +46,14 @@ ul {
 .answers ul {
 	/*float: right;*/
 	padding-right: 23em;
+	border-color: black;
+	border-style: solid;
+}
+
+.progress {
+	height: 55px;
+	border-color: orange;
+	border-style: solid;
 }
 
 .progress ul li {
