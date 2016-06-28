@@ -2,12 +2,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	background-image: url("http://i.imgur.com/ORtGVpV.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 175%;
-}
-
 html, body {
 	height: 100%;
 	margin: 0;
@@ -29,20 +23,6 @@ html, body {
 h1 {
 	font-family: 'Pacifico', cursive;
 	font-size: 3em;
-}
-
-.questions {
-	float: left;
-	padding-left: 15em;
-}
-
-.answers {
-	float: right;
-	padding-right: 23em;
-}
-
-ul {
-	list-style-type: none;
 }
 
 #quiz {
