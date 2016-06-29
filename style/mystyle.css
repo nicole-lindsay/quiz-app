@@ -53,9 +53,14 @@ ul {
 .progress ul li {
 	display: inline-block;
 	font-size: 2em;
+	border-style: solid;
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 .progress ul {
 	text-align: center;
-	letter-spacing: 3em;
 }
