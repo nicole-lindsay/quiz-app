@@ -28,15 +28,13 @@ h1 {
 }
 
 #quiz {
-	min-height: 50%;
+	min-height: 45%;
 	margin: 0 auto;
 	display: flex;
 }
 
 .questions {
 	padding-left: 15em;
-	/*border-color: red;*/
-	/*border-style: solid;*/
 }
 
 ul {
@@ -46,8 +44,6 @@ ul {
 
 .answers {
 	padding-left: 12em;
-	/*border-color: orange;*/
-	/*border-style: solid;*/
 }
 
 .progress {
@@ -69,7 +65,7 @@ ul {
 	text-align: center;
 }
 
-.submit {
-	/*border-color: yellow;*/
-	/*border-style: solid;*/
+#submit {
+	margin-top: 7em;
+	margin-left: -5em;
 }
