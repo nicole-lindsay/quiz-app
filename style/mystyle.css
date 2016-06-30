@@ -35,6 +35,8 @@ h1 {
 
 .questions {
 	padding-left: 15em;
+	/*border-color: red;*/
+	/*border-style: solid;*/
 }
 
 ul {
@@ -44,6 +46,8 @@ ul {
 
 .answers {
 	padding-left: 12em;
+	/*border-color: orange;*/
+	/*border-style: solid;*/
 }
 
 .progress {
@@ -63,4 +67,9 @@ ul {
 
 .progress ul {
 	text-align: center;
+}
+
+.submit {
+	/*border-color: yellow;*/
+	/*border-style: solid;*/
 }
