@@ -17,7 +17,7 @@ body {
 	border-style: solid;
 }
 
-.topper {
+#topper {
 	text-align: center;
 	padding-bottom: 3.5em;
 }
@@ -73,4 +73,17 @@ ul {
 #submit:hover {
 	cursor: pointer;
 	background-color: yellow;
+}
+
+/*#newGame:hover {
+	cursor: pointer;
+	background-color: yellow;
+}*/
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
 }

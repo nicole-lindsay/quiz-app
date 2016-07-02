@@ -32,10 +32,10 @@ var quizList = [{
 
 $(document).ready(function() {
     var currentQuestion = 0
+    var correctAnswer = 0
 
     writeQuestion(quizList[currentQuestion])
 
-    //changes the Q&A when Submit is pressed
     $("#submit").click(function(event) {
         event.preventDefault();
         var userChoice = $("input:checked").val();
@@ -43,13 +43,18 @@ $(document).ready(function() {
             alert("You need to select an option before moving on!");
         } else {
             if (quizList[currentQuestion].correct == userChoice) {
-                $(".progress li:nth-child(" + (currentQuestion + 1) + ")").css("background-color", "green")
+                $(".progress li:nth-child(" + (currentQuestion + 1) + ")").addClass("green");
             } else {
-                $(".progress li:nth-child(" + (currentQuestion + 1) + ")").css("background-color", "red")
+                $(".progress li:nth-child(" + (currentQuestion + 1) + ")").addClass("red");
             }
             currentQuestion++;
             writeQuestion(quizList[currentQuestion]);
         }
     });
+
+    // $("#newGame").click(function(event) {
+    //     event.preventDefault();
+    //     writeQuestion();
+    // })
 
 });
