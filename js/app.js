@@ -3,7 +3,7 @@ function writeQuestion(question) {
     $(".questions p").html(question.text);
     $(".answers ul").empty();
     for (var i = 0; i < question.options.length; i++) {
-        $(".answers ul").append('<li><input type="radio" name="option"><span class="options">' + question.options[i] + '</span></li>');
+        $(".answers ul").append('<li><input type="radio" name="option" value="' + i + '"><span class="options">' + question.options[i] + '</span></li>');
     }
 }
 
@@ -39,8 +39,18 @@ $(document).ready(function() {
     //changes the Q&A when Submit is pressed
     $("#submit").click(function(event) {
         event.preventDefault();
-        currentQuestion++;
-        writeQuestion(quizList[currentQuestion]);
+        var userChoice = $("input:checked").val();
+        if (userChoice == undefined) {
+            alert("You need to select an option before moving on!");
+        } else {
+            if (quizList[currentQuestion].correct == userChoice) {
+                $(".progress li:nth-child("+(currentQuestion+1)+")").css("background-color", "green")
+            } else {
+                $(".progress li:nth-child("+(currentQuestion+1)+")").css("background-color", "red")
+            }
+            currentQuestion++;
+            writeQuestion(quizList[currentQuestion]);
+        }
     });
 
 });
