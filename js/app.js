@@ -10,8 +10,7 @@ function writeQuestion(question) {
 var quizList = [{
     text: "What is the definition of the word <b>fortnight</b>?",
     options: ["A month", "A day", "Two weeks", "A week"],
-    correct: 2 // one single number in an array?? : [2]
-    // arrays are great if you have a collection
+    correct: 2
 }, {
     text: "Which word is synonymous with <b>vitriol</b>?",
     options: ["angry words", "pleasantness", "obtuse", "pageantry"],
@@ -44,9 +43,9 @@ $(document).ready(function() {
             alert("You need to select an option before moving on!");
         } else {
             if (quizList[currentQuestion].correct == userChoice) {
-                $(".progress li:nth-child("+(currentQuestion+1)+")").css("background-color", "green")
+                $(".progress li:nth-child(" + (currentQuestion + 1) + ")").css("background-color", "green")
             } else {
-                $(".progress li:nth-child("+(currentQuestion+1)+")").css("background-color", "red")
+                $(".progress li:nth-child(" + (currentQuestion + 1) + ")").css("background-color", "red")
             }
             currentQuestion++;
             writeQuestion(quizList[currentQuestion]);
