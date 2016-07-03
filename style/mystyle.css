@@ -75,15 +75,24 @@ ul {
 	background-color: yellow;
 }
 
-/*#newGame:hover {
-	cursor: pointer;
-	background-color: yellow;
-}*/
-
 .red {
 	background-color: red;
 }
 
 .green {
 	background-color: green;
+}
+
+.reset {
+	background-color: transparent;
+}
+
+#final {
+	text-align: center;
+	min-height: 45%;
+}
+
+.retry:hover {
+	cursor: pointer;
+	background-color: yellow;
 }

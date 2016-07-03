@@ -31,8 +31,11 @@ var quizList = [{
 
 
 $(document).ready(function() {
-    var currentQuestion = 0
-    var correctAnswer = 0
+    var currentQuestion = 0;
+    var correctAnswer = 0;
+    var totalQuestion = quizList.length;
+
+    $("#final").hide();
 
     writeQuestion(quizList[currentQuestion])
 
@@ -44,17 +47,28 @@ $(document).ready(function() {
         } else {
             if (quizList[currentQuestion].correct == userChoice) {
                 $(".progress li:nth-child(" + (currentQuestion + 1) + ")").addClass("green");
+                correctAnswer++;
+                console.log(correctAnswer);
             } else {
                 $(".progress li:nth-child(" + (currentQuestion + 1) + ")").addClass("red");
+            }
+            if ((currentQuestion + 1) == totalQuestion) {
+                $("#quiz").hide();
+                $("#final").show();
+                $(".userScore").text("You scored " + correctAnswer + " out of " + totalQuestion + " questions correctly!");
             }
             currentQuestion++;
             writeQuestion(quizList[currentQuestion]);
         }
     });
 
-    // $("#newGame").click(function(event) {
-    //     event.preventDefault();
-    //     writeQuestion();
-    // })
+    $(".retry").click(function(event) {
+        currentQuestion = 0;
+        correctAnswer = 0;
+        writeQuestion(quizList[currentQuestion]);
+        $("#quiz").show();
+        $("#final").hide();
+        $(".progress li").addClass("reset");
+    });
 
 });
