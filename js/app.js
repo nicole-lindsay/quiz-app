@@ -68,7 +68,7 @@ $(document).ready(function() {
         writeQuestion(quizList[currentQuestion]);
         $("#quiz").show();
         $("#final").hide();
-        $(".progress li").addClass("reset");
+        // $(".progress li").addClass("reset");
     });
 
 });
