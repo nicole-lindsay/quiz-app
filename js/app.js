@@ -41,18 +41,18 @@ $(document).ready(function() {
 
     $("#submit").click(function(event) {
         event.preventDefault();
-        var userChoice = $("input:checked").val();
-        if (userChoice == undefined) {
+        var userChoice = $("input:checked").val(); 
+        if (userChoice == undefined) { //ensures you can't move on without selecting radio button
             alert("You need to select an option before moving on!");
         } else {
-            if (quizList[currentQuestion].correct == userChoice) {
+            if (quizList[currentQuestion].correct == userChoice) { //logs # of correct answers, changes progress li background color
                 $(".progress li:nth-child(" + (currentQuestion + 1) + ")").addClass("green");
                 correctAnswer++;
                 console.log(correctAnswer);
             } else {
                 $(".progress li:nth-child(" + (currentQuestion + 1) + ")").addClass("red");
             }
-            if ((currentQuestion + 1) == totalQuestion) {
+            if ((currentQuestion + 1) == totalQuestion) { //shows score, hides Q&A
                 $("#quiz").hide();
                 $("#final").show();
                 $(".userScore").text("You scored " + correctAnswer + " out of " + totalQuestion + " questions correctly!");
@@ -62,13 +62,13 @@ $(document).ready(function() {
         }
     });
 
-    $(".retry").click(function(event) {
+    $(".retry").click(function(event) {  //resets quiz
         currentQuestion = 0;
         correctAnswer = 0;
         writeQuestion(quizList[currentQuestion]);
         $("#quiz").show();
         $("#final").hide();
-        // $(".progress li").addClass("reset");
+        $(".progress li").removeClass("green red");
     });
 
 });
