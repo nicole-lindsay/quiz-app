@@ -24,7 +24,7 @@ var quizList = [{
     options: ["enemy", "alter ego", "fish", "friend"],
     correct: 3
 }, {
-    text: "What is the definition of the word <b>poignant</b>?",
+    text: "Which of these words is synonymous with <b>poignant</b>?",
     options: ["moving", "bland", "wrong", "unaffecting"],
     correct: 0
 }];
