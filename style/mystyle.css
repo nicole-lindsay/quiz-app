@@ -19,7 +19,7 @@ body {
 
 #topper {
 	text-align: center;
-	padding-bottom: 3.5em;
+	padding-bottom: 6em;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
 }
 
 .questions {
-	padding-left: 15em;
+	padding-left: 16em;
 }
 
 ul {
@@ -43,7 +43,7 @@ ul {
 }
 
 .answers {
-	padding-left: 12em;
+	padding-left: 13em;
 }
 
 .progress {
@@ -63,6 +63,7 @@ ul {
 
 .progress ul {
 	text-align: center;
+	padding-top: 2em;
 }
 
 #submit {
